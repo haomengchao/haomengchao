@@ -22,4 +22,11 @@ date: 2021-10-03 19:59:00
 
 [hexo 管理工具](https://github.com/jaredly/hexo-admin)
 
+### Debug 记录
+在部署到github的时候，有一次更换主题后css就加载不出来了，重新clean deploy了好几次都没解决，参考大量资料有说是github deploy branch的问题，有说是config.yml里root和url的问题，经过我一系列操作后终于解决了：
 
+1. 首先github.io目前只支持在主分支上部署，指定分支部署已经不支持了，所以hexo的部署分支一定是master（现在应该叫main了），你的code放到另一个分支上。
+2. config.yml里的url和root填的不对应该会导致css文件拿不到，url如果你用github的话，就填成`https://username.github.io/`, root就填 `/ `就行。
+3. 还是不行的话就清除浏览器cookie。
+
+我是通过以上三种操作解决了样式无法加载的问题。

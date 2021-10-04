@@ -13,7 +13,8 @@ timezone: America/Los_Angeles
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://haomengchao.github.io/haomengchao.github.io
+url: https://haomengchao.github.io/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,6 +105,6 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/haomengchao/haomengchao.github.io
-  branch: gh-pages
+  branch: main
 admin:
   deployCommand: 'hexo-publish.bat'

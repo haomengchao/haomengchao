@@ -7,13 +7,13 @@ title: Mengchao Hao's Blog
 subtitle: ''
 description: 'Mengchao`s blog'
 keywords:
-author: John Doe
+author: Mengchao Hao
 language: zh-CN
-timezone: 'GMT-7'
+timezone: America/Los_Angeles
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://haomengchao.github.io/haomengchao.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,6 +102,8 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: git@github.com:haomengchao/haomengchao.github.io.git
-  branch: main
+  type: git
+  repo: https://github.com/haomengchao/haomengchao.github.io
+  branch: gh-pages
+admin:
+  deployCommand: 'hexo-publish.bat'

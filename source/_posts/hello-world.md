@@ -1,6 +1,7 @@
 title: 搭建hexo参考的资料
 tags:
   - 学习
+  - hexo
 categories:
   - 学习
 date: 2021-10-03 19:59:00

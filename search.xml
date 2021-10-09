@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>23s魂土</title>
+    <url>/2021/10/09/23s%E9%AD%82%E5%9C%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>纪念一下签到180天终于做出了23s魂土的阵容，也总结一下云舅阵容的御魂要求。</p>
+<p>首先阵容里的式神是： 云外镜，玉藻前（可替换为烬天玉藻前，要求更低），鬼王酒吞童子，薰和童男。其中鬼王酒吞童子的作用是增伤，大妖之力的效果血量每减少1%伤害增加1%，所以对技能并没有要求。这种阵容的思路是在第二回目让式神被大天狗刮死，然后童男献祭复活所有式神，这样输出式神的血量会非常少，直接吃到将近99%的增伤，然后收掉二回目和三回目。</p>
+<h5 id="速度要求"><a href="#速度要求" class="headerlink" title="速度要求"></a>速度要求</h5><p>式神的速度要求为:<br><figure class="highlight basic"><table><tr><td class="code"><pre><span class="line"><span class="symbol">158 </span>&gt; 云外镜 &gt; 玉藻前 &gt; <span class="number">156</span> &gt; 童男 &gt; <span class="number">155</span> &gt; 鬼王酒吞童子 &gt; <span class="number">135</span> &gt; 薰</span><br></pre></td></tr></table></figure><br>其中鬼王酒吞童子大于135只是为了最后补一下刀，如果伤害足够的话这个不是强制要求。 童男速度不强制要求小于156，玉藻前和云外镜，但必须小于158，大于155。速度要求的原因是第二回目大天狗的速度是158，要保证第二回合让大天狗第一个行动将式神都刮死，然后童男行动复活，所以童男不能先于大天狗行动，否则童男回合过了无法献祭；黑晴明的速度是155，要保证在黑晴明行动前把第二回目清了。云外镜先于玉藻前，玉藻前先于云外镜的情况御魂数值要求会发生改变，这里不做讨论。</p>
+<h4 id="御魂搭配及数值要求"><a href="#御魂搭配及数值要求" class="headerlink" title="御魂搭配及数值要求"></a>御魂搭配及数值要求</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>式神</th>
+<th>御魂套装</th>
+<th>面板要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云外镜</td>
+<td>狂骨鬼灵歌姬</td>
+<td>12400&lt;面板&lt;13300</td>
+</tr>
+<tr>
+<td>玉藻前</td>
+<td>狂骨荒骷髅</td>
+<td>14400&lt;面板</td>
+</tr>
+<tr>
+<td>薰</td>
+<td>火灵</td>
+<td>26000&lt;生命值</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>云外镜玉藻前都要求满暴击，并且输出技能等级要最高。云外镜面板低于12400时无法杀死黑晴明，面板高于13300的时候会杀死雪女，导致玉藻前施放狐火慢1s，当然可以通过锁定堕天来解决这个问题。因为云外镜面板数值要求不高，二号位可以放主属性为速度的御魂。六星二号位速度御魂强化到12级正好只加48速度，让云外镜速度达标。</p>
+<p>注意云外镜的面板计算方式为:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">（攻击 + 防御 <span class="emphasis">* 2 ） *</span> 爆伤</span><br></pre></td></tr></table></figure>
+<p>附带我的云外镜和玉藻前的面板</p>
+<p><img src="/images/云外镜.png" alt="云外镜"><br><img src="/images/大舅.png" alt="玉藻前"></p>
+]]></content>
+      <categories>
+        <category>游戏</category>
+      </categories>
+      <tags>
+        <tag>游戏</tag>
+        <tag>阴阳师</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建hexo参考的资料</title>
     <url>/2021/10/03/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>终于是有了自己的个人博客，本来以为这件事是需要前后端从头到尾自己写，没想到现在有这么多成熟的博客框架，浏览了一圈后选定使用hexo，主要是因为和github配合部署的方案比较成熟，说白了因为对懒人好。<br>整个过程中参考了以下一些资料，感谢各位大佬提供的经验！</p>
@@ -35,5 +83,12 @@
 </blockquote>
 <p>采用文中第二种方法。注意作者所说的<code>hexo/scripts/plugins.js</code>并不存在，需要自己新建。</p>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>

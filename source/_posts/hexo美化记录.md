@@ -1,7 +1,11 @@
 title: hexo美化记录
 author: Mengchao Hao
-date: 2021-10-04 14:23:08
 tags:
+  - 学习
+  - hexo
+categories:
+  - 学习
+date: 2021-10-04 14:23:00
 ---
 #### 增加文章结尾自定义文字
 在 `hexo/themes/next/layout/_marco` 下新建文件`passage-end-tag.swig` 并在其中保存以下内容

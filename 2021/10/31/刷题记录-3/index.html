@@ -20,21 +20,21 @@
     var CONFIG = {"hostname":"haomengchao.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="终于是有了自己的个人博客，本来以为这件事是需要前后端从头到尾自己写，没想到现在有这么多成熟的博客框架，浏览了一圈后选定使用hexo，主要是因为和github配合部署的方案比较成熟，说白了因为对懒人好。整个过程中参考了以下一些资料，感谢各位大佬提供的经验！ 视频参考主要参考了这位up主的教程： 【2021最新版】保姆级Hexo+github搭建个人博客 可谓是真的保姆级了 文字参考Hexo博客系列（">
+  <meta name="description" content="LinkedList10.31Leetcode 160. Intersection of Two Linked Lists L1非公共长度m，L2非公共长度n，两者公共长度为k。L1走完开始走L2，L2走完开始走L1，当两者走 m+k+n次后正好在相交点相遇。注意判断条件不能是p1或者p2.next是None，需要让这两个节点都走到null上一次，这样可以handle 两者没有交叉的情况。 123">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建hexo参考的资料">
-<meta property="og:url" content="https://haomengchao.github.io/2021/10/03/hello-world/index.html">
+<meta property="og:title" content="刷题记录-3">
+<meta property="og:url" content="https://haomengchao.github.io/2021/10/31/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95-3/index.html">
 <meta property="og:site_name" content="Mengchao Hao&#39;s Blog">
-<meta property="og:description" content="终于是有了自己的个人博客，本来以为这件事是需要前后端从头到尾自己写，没想到现在有这么多成熟的博客框架，浏览了一圈后选定使用hexo，主要是因为和github配合部署的方案比较成熟，说白了因为对懒人好。整个过程中参考了以下一些资料，感谢各位大佬提供的经验！ 视频参考主要参考了这位up主的教程： 【2021最新版】保姆级Hexo+github搭建个人博客 可谓是真的保姆级了 文字参考Hexo博客系列（">
+<meta property="og:description" content="LinkedList10.31Leetcode 160. Intersection of Two Linked Lists L1非公共长度m，L2非公共长度n，两者公共长度为k。L1走完开始走L2，L2走完开始走L1，当两者走 m+k+n次后正好在相交点相遇。注意判断条件不能是p1或者p2.next是None，需要让这两个节点都走到null上一次，这样可以handle 两者没有交叉的情况。 123">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-04T02:59:00.000Z">
-<meta property="article:modified_time" content="2021-10-04T21:20:35.169Z">
+<meta property="article:published_time" content="2021-10-31T17:52:00.000Z">
+<meta property="article:modified_time" content="2021-10-31T18:44:41.286Z">
 <meta property="article:author" content="Mengchao Hao">
 <meta property="article:tag" content="学习">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="leetcode">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://haomengchao.github.io/2021/10/03/hello-world/">
+<link rel="canonical" href="https://haomengchao.github.io/2021/10/31/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95-3/">
 
 
 <script id="page-configurations">
@@ -71,7 +71,7 @@
     storage-name="metingjs" >
   </meting-js>
 
-  <title>搭建hexo参考的资料 | Mengchao Hao's Blog</title>
+  <title>刷题记录-3 | Mengchao Hao's Blog</title>
   
 
 
@@ -217,7 +217,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://haomengchao.github.io/2021/10/03/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://haomengchao.github.io/2021/10/31/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -230,7 +230,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          搭建hexo参考的资料
+          刷题记录-3
         </h1>
 
         <div class="post-meta">
@@ -239,16 +239,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-10-03 19:59:00" itemprop="dateCreated datePublished" datetime="2021-10-03T19:59:00-07:00">2021-10-03</time>
+              <time title="创建时间：2021-10-31 10:52:00 / 修改时间：11:44:41" itemprop="dateCreated datePublished" datetime="2021-10-31T10:52:00-07:00">2021-10-31</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-04 14:20:35" itemprop="dateModified" datetime="2021-10-04T14:20:35-07:00">2021-10-04</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -268,8 +262,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2021/10/03/hello-world/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/10/03/hello-world/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2021/10/31/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95-3/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/10/31/刷题记录-3/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -284,18 +278,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>终于是有了自己的个人博客，本来以为这件事是需要前后端从头到尾自己写，没想到现在有这么多成熟的博客框架，浏览了一圈后选定使用hexo，主要是因为和github配合部署的方案比较成熟，说白了因为对懒人好。<br>整个过程中参考了以下一些资料，感谢各位大佬提供的经验！</p>
-<h3 id="视频参考"><a href="#视频参考" class="headerlink" title="视频参考"></a>视频参考</h3><p>主要参考了这位up主的教程： <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mU4y1j72n?p=1">【2021最新版】保姆级Hexo+github搭建个人博客</a> 可谓是真的保姆级了</p>
-<h3 id="文字参考"><a href="#文字参考" class="headerlink" title="文字参考"></a>文字参考</h3><p><a target="_blank" rel="noopener" href="https://yehansharp.github.io/2019/12/28/Hexo%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BD%BF%E7%94%A8Hexo%E9%85%8D%E5%90%88Github%E8%BF%9B%E8%A1%8C%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA">Hexo博客系列（一）：使用Hexo配合Github进行静态博客搭建</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">Next主题for hexo</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/jaredly/hexo-admin">hexo 管理工具</a></p>
-<h3 id="Debug-记录"><a href="#Debug-记录" class="headerlink" title="Debug 记录"></a>Debug 记录</h3><p>在部署到github的时候，有一次更换主题后css就加载不出来了，重新clean deploy了好几次都没解决，参考大量资料有说是github deploy branch的问题，有说是config.yml里root和url的问题，经过我一系列操作后终于解决了：</p>
-<ol>
-<li>首先github.io目前只支持在主分支上部署，指定分支部署已经不支持了，所以hexo的部署分支一定是master（现在应该叫main了），你的code放到另一个分支上。</li>
-<li>config.yml里的url和root填的不对应该会导致css文件拿不到，url如果你用github的话，就填成<code>https://username.github.io/</code>, root就填 <code>/</code>就行。</li>
-<li>还是不行的话就清除浏览器cookie。</li>
-</ol>
-<p>我是通过以上三种操作解决了样式无法加载的问题。</p>
+        <h4 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h4><h5 id="10-31"><a href="#10-31" class="headerlink" title="10.31"></a>10.31</h5><p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/intersection-of-two-linked-lists/">Leetcode 160. Intersection of Two Linked Lists</a></p>
+<p>L1非公共长度m，L2非公共长度n，两者公共长度为k。L1走完开始走L2，L2走完开始走L1，当两者走 m+k+n次后正好在相交点相遇。注意判断条件不能是p1或者p2.next是None，需要让这两个节点都走到null上一次，这样可以handle 两者没有交叉的情况。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getIntersectionNode</span>(<span class="params">self, headA: ListNode, headB: ListNode</span>) -&gt; ListNode:</span></span><br><span class="line">        p_1 = headA</span><br><span class="line">        p_2 = headB</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span> p_1 != p_2:</span><br><span class="line">            <span class="keyword">if</span> p_1 <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">                p_1 = headB</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                p_1 = p_1.<span class="built_in">next</span></span><br><span class="line">            <span class="keyword">if</span> p_2 <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">                p_2 = headA</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                p_2 = p_2.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> p_1</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">Leetcode 19. Remove Nth Node From End of List</a></p>
+<p>找到一个链表的倒数第k个node，设这个list长为n，那么先让fast指针走k步，再让slow和fast一块走完剩下的（n-k），即fast走到null，那么这时候slow所指的位置就是倒数第k个。因为找到倒数第k个需要找到正数第n-k+1个，即需要走n-k步。从正数第k个走到末尾null上正好是n-k步。<br>删除第k个，就要找到倒数第k+1个。但是当k=length的时候这个倒数k+1是不存在的null，所以需要加一个dummy head来避免null pointer。注意在一个list的头部加dummy是不影响找倒数的，因为倒数的位置并没有发生改变，所以针对一个没有dummy head的list的findNFromEnd是可以被有dummy head 的list使用并且得到正确结果的。所以代码如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">removeNthFromEnd</span>(<span class="params">self, head: <span class="type">Optional</span>[ListNode], n: <span class="built_in">int</span></span>) -&gt; <span class="type">Optional</span>[ListNode]:</span></span><br><span class="line">        dummy = ListNode()</span><br><span class="line">        dummy.<span class="built_in">next</span> = head</span><br><span class="line">        prev = self.findNFromEnd(dummy, n+<span class="number">1</span>)</span><br><span class="line">        prev.<span class="built_in">next</span> = prev.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> dummy.<span class="built_in">next</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">findNFromEnd</span>(<span class="params">self, head, n</span>):</span></span><br><span class="line">        fast = head</span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            fast = fast.<span class="built_in">next</span></span><br><span class="line">        slow = head</span><br><span class="line">        <span class="keyword">while</span> fast <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            fast = fast.<span class="built_in">next</span></span><br><span class="line">            slow = slow.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> slow</span><br></pre></td></tr></table></figure><br>如果不想搞这么复杂，就可以稍微改一下findNFromEnd的过程。找倒数第n+1个，则可以找倒数第n个但是让slow指针少走一步，少走一步可以通过改变fast到头的判断方式,即fast==null 改为fast.next==null。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">removeNthFromEnd</span>(<span class="params">self, head: ListNode, n: <span class="built_in">int</span></span>) -&gt; ListNode:</span></span><br><span class="line">        fast, slow = head, head</span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n): fast = fast.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> fast: <span class="keyword">return</span> head.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">while</span> fast.<span class="built_in">next</span>: fast, slow = fast.<span class="built_in">next</span>, slow.<span class="built_in">next</span></span><br><span class="line">        slow.<span class="built_in">next</span> = slow.<span class="built_in">next</span>.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> head</span><br></pre></td></tr></table></figure></p>
 
     </div>
 
@@ -313,7 +300,7 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/leetcode/" rel="tag"># leetcode</a>
           </div>
 
         
@@ -321,10 +308,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2021/10/04/hexo%E7%BE%8E%E5%8C%96%E8%AE%B0%E5%BD%95/" rel="next" title="hexo美化记录">
-      hexo美化记录 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/10/30/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95-2/" rel="prev" title="刷题记录-2">
+      <i class="fa fa-chevron-left"></i> 刷题记录-2
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/11/01/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95-4/" rel="next" title="刷题记录-4">
+      刷题记录-4 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -391,7 +381,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%86%E9%A2%91%E5%8F%82%E8%80%83"><span class="nav-text">视频参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E5%AD%97%E5%8F%82%E8%80%83"><span class="nav-text">文字参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Debug-%E8%AE%B0%E5%BD%95"><span class="nav-text">Debug 记录</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#LinkedList"><span class="nav-text">LinkedList</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#10-31"><span class="nav-text">10.31</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -597,9 +587,9 @@ window.addEventListener('pjax:success', () => {
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://haomengchao.github.io/2021/10/03/hello-world/";
-    this.page.identifier = "2021/10/03/hello-world/";
-    this.page.title = "搭建hexo参考的资料";
+    this.page.url = "https://haomengchao.github.io/2021/10/31/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95-3/";
+    this.page.identifier = "2021/10/31/刷题记录-3/";
+    this.page.title = "刷题记录-3";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {
